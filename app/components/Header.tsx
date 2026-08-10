@@ -118,7 +118,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t-4 border-black dark:border-gray-500">
+          <div className="lg:hidden py-4 border-t-4 border-black dark:border-gray-500 animate-[fadeIn_0.2s_ease-out]">
             <div className="flex flex-col gap-2">
               {NAV_ITEMS.map(({ id, label, color }) => {
                 const isActive = subPage ? id === subPage : activeNav === id;
